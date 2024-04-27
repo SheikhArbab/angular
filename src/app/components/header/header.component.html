@@ -7,7 +7,8 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li *ngFor="let link of navLinks" class="nav-item">
-                  <a class="nav-link" [routerLink]="link.url" routerLinkActive="text-white bg-primary btn btn-primary" [routerLinkActiveOptions]="{exact: true}">
+                  <a class="nav-link" [routerLink]="link.url" routerLinkActive="text-white bg-primary btn btn-primary"
+                   [routerLinkActiveOptions]="{exact: true}">
                     {{link.name}}</a>
               </li>
           </ul>

@@ -1,0 +1,9 @@
+[build]
+base = "fangular"
+command = "npm run build:prod"
+publish = "dist/"
+
+[[redirects]]
+  from = "/*"
+  to = "/"
+  status = 200
