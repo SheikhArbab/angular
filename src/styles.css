@@ -1,1 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
+main{
+    min-height: 100dvh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

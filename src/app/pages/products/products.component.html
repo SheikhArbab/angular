@@ -1,0 +1,23 @@
+<div>
+
+
+    <div *ngIf="isLoading; else content">
+        Loading...
+    </div>
+
+    <ng-template #content>
+        <div *ngIf="products.length === 0">
+            Empty
+        </div>
+
+
+        <div *ngIf="products.length > 0">
+            <div *ngFor="let product of products">
+                <app-product [product]="product"></app-product>
+            </div>
+        </div>
+    </ng-template>
+
+
+
+</div>

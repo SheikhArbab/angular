@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular';
+  isMessage: boolean = false;
+  inputVal: string = "";
+  msg: string = "Product is added to cart";
+
+  constructor() {}
+
+  addCart(): void {
+    this.isMessage = !this.isMessage;
+  }
+
+  inputFnc(e: string): void {
+    this.inputVal = e;
+  }
 }
